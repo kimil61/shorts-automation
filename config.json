@@ -1,0 +1,63 @@
+{
+    "automation": {
+        "daily_video_count": 3,
+        "upload_times": ["17:00", "19:30", "21:00"],
+        "min_validation_score": 70,
+        "max_retries": 3,
+        "retry_delay_minutes": 30,
+        "emergency_keywords": [
+            "생활용품 추천",
+            "주방용품 리뷰", 
+            "홈인테리어 소품",
+            "겨울 필수템",
+            "다이어트 도구"
+        ]
+    },
+    "video": {
+        "resolution": [1080, 1920],
+        "fps": 30,
+        "duration_seconds": 60,
+        "quality": "high",
+        "format": "mp4",
+        "codec": "h264",
+        "bitrate": "8000k",
+        "audio_bitrate": "192k"
+    },
+    "rendering": {
+        "background_style": "gradient",
+        "text_animation": true,
+        "transition_effects": true,
+        "logo_watermark": false,
+        "captions_enabled": true,
+        "thumbnail_auto_generate": true
+    },
+    "api_limits": {
+        "youtube_quota_daily": 10000,
+        "openai_max_tokens": 4000,
+        "coupang_rate_limit_per_minute": 10,
+        "concurrent_requests": 5
+    },
+    "validation": {
+        "keyword_min_length": 3,
+        "keyword_max_length": 50,
+        "competition_threshold": 60,
+        "trend_threshold": 50,
+        "product_rating_min": 3.5,
+        "review_count_min": 10
+    },
+    "monitoring": {
+        "health_check_interval_minutes": 30,
+        "performance_tracking": true,
+        "auto_restart_on_error": true,
+        "max_error_count": 5,
+        "log_retention_days": 30
+    },
+    "notifications": {
+        "telegram_enabled": true,
+        "email_enabled": false,
+        "success_notify": true,
+        "error_notify": true,
+        "daily_report": true,
+        "weekly_report": true
+    }
+}
